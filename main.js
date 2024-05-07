@@ -5,6 +5,9 @@ const portNum = 8000;
 
 app.use(cors());
 
+app.get('/', function (req, res, next) {
+  res.json('Hello!');
+});
 app.get('/tabulatorTest', function (req, res, next) {
   const tableData = require('./tableData.js');
   let resultData = [...tableData];
