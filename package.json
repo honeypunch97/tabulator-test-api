@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "yarn; yarn start"
   },
   "dependencies": {
     "cors": "^2.8.5",
