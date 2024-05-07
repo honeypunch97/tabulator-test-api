@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const portNum = 3000;
+const portNum = 8000;
 
 app.use(cors());
 
