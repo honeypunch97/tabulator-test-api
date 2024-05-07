@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "yarn; yarn start"
+    "start": "npm install; npm start"
   },
   "dependencies": {
     "cors": "^2.8.5",
