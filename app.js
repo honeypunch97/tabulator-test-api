@@ -26,13 +26,13 @@ app.get('/tabulatorTest', function (req, res, next) {
   // size
   const size = parseInt(req.query.size) || 10;
 
-  // page와 sized에 맞는 데이터 반환
-  resultData = resultData.slice(page * size, (page + 1) * size);
-
   // 전체 데이터 아이템 개수
   const totalCount = resultData.length;
   // 전페 페이지 수
   const totalPage = Math.ceil(resultData.length / size);
+
+  // page와 sized에 맞는 데이터 반환
+  resultData = resultData.slice(page * size, (page + 1) * size);
   // 현재 페이지 번호
   const currentPage = page || 0;
 
