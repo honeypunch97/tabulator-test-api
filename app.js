@@ -33,7 +33,7 @@ app.get('/tabulatorTest', function (req, res, next) {
   else if (type == 3) resultData = resultData.filter((item) => item.type === '언론보도');
 
   // 상태 (status)
-  const status = req.query.status.split(',') || [1];
+  const status = req.query?.status?.split(',') || [1];
   if (status.length === 1 && status[0] == 1) {
   } else {
     const translateStatus = status.map((item) => {
